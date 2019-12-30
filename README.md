@@ -34,7 +34,7 @@ Similarly, messy code that works is better than clean code that doesn't. First, 
 
 ## What You Already Have
 
-The starter code has migrations and models for the initial `Reader` and `Magazine` models, and seed data for some `Reader`s and `Subscription`s. The schema currently looks like this: 
+The starter code has migrations and models for the initial `Reader`, `Magazine` and `Subscription` models, and seed data for some `Reader`s and `Magazine`s. The schema currently looks like this: 
 
 #### `readers` Table
 | Column      | Type      |
@@ -59,12 +59,12 @@ Remember: Active Record give your classes access to a lot of built-in methods! K
 
 ### Migrations
 
-Before creating your `Subscription` class, you will need to create a migration for the `subscriptions` table. 
+Before working on the rest of the deliverables, you will need to create a migration for the `subscriptions` table. 
 
 - A `Subscription` belongs to a `Magazine`, and a `Subscription` also belongs to an `Reader`. In your migration, create any columns your `subscriptions` table will need to establish these relationships.
 - The `subscriptions` table should also have a `price` column that stores an integer.
 
-After creating your migration, create your `Subscription` class. Then use the `seeds.rb` file to create instances of your `Subscription` class so you can test your code.
+After creating your migration, use the `seeds.rb` file to create instances of your `Subscription` class so you can test your code.
 
 **Once you've set up your `Subscription` class**, work on building out the following deliverables. Use Active Record association macros and Active Record query methods where appropriate.
 
@@ -93,7 +93,7 @@ After creating your migration, create your `Subscription` class. Then use the `s
 
 ### Aggregate and Association Methods
 
-### Subscription
+#### Subscription
 - `Subscription#print_details`
   - `puts` a string to the terminal to display the details of the subscription
   - the string should be formatted like this: `{reader name} subscribed to {magazine title} for ${subscription price}`

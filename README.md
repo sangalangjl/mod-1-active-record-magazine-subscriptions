@@ -62,13 +62,15 @@ Remember: Active Record give your classes access to a lot of built-in methods! K
 Before working on the rest of the deliverables, you will need to create a migration for the `subscriptions` table. 
 
 - A `Subscription` belongs to a `Magazine`, and a `Subscription` also belongs to an `Reader`. In your migration, create any columns your `subscriptions` table will need to establish these relationships.
-- The `subscriptions` table should also have a `price` column that stores an integer.
+  - The `subscriptions` table should also have a `price` column that stores an integer.
 
 After creating your migration, use the `seeds.rb` file to create instances of your `Subscription` class so you can test your code.
 
-**Once you've set up your `Subscription` class**, work on building out the following deliverables. Use Active Record association macros and Active Record query methods where appropriate.
+**Once you've set up your `Subscription` class**, work on building out the following deliverables.
 
 ### Object Relationship Methods
+
+Use Active Record association macros and Active Record query methods where appropriate (i.e. `has_many`, `has_many through`, and `belongs_to`).
 
 #### Subscription
 
